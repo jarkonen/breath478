@@ -22,6 +22,7 @@ export class BreathService {
   private startCycle() {
     if (this.currentCycle >= this.totalCycles) {
       this.phase$.next('done');
+      this.timeLeft$.next(0); // <- AÑADE esta línea para reiniciar contador
       return;
     }
 
