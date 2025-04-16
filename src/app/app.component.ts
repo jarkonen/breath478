@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { BreathComponent } from './breath/breath.component';
+import { ControlPanelComponent } from './control-panel/control-panel.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, FormsModule, ControlPanelComponent, BreathComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'breath478';
-}
+export class AppComponent {}

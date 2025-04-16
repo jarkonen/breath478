@@ -1,0 +1,34 @@
+.breath-container {
+    text-align: center;
+    margin-top: 2rem;
+  
+    .phase {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .countdown {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .line {
+      width: 80%;
+      height: 4px;
+      background: #ccc;
+      margin: 0 auto;
+      position: relative;
+    }
+  
+    .ball {
+      width: 20px;
+      height: 20px;
+      background-color: #7bc9ff;
+      border-radius: 50%;
+      position: absolute;
+      top: -8px;
+      left: 0;
+      transition: transform 4s ease-in-out;
+    }
+  }
+  

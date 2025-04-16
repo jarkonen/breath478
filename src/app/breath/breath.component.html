@@ -1,0 +1,9 @@
+<!-- src/app/breath/breath.component.html -->
+<div class="breath-container">
+    <div class="phase">{{ phase | titlecase }}</div>
+    <div class="countdown">{{ timeLeft }}</div>
+    <div class="line">
+      <div class="ball" [ngStyle]="{ transform: ballPosition }"></div>
+    </div>
+  </div>
+  
